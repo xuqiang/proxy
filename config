@@ -1,0 +1,16 @@
+function add_stand_lib() {
+    d=$1
+    export LD_LIBRARY_PATH=$d/lib/:${LD_LIBRARY_PATH}
+    export LIBRARY_PATH=$d/lib/:${LIBRARY_PATH}
+    export C_INCLUDE_PATH=$d/include/:${C_INCLUDE_PATH}
+    export CPLUS_INCLUDE_PATH=$d/include/:${CPLUS_INCLUDE_PATH}
+}
+
+
+
+BOOST_HOME=`pwd`/bin/boost/
+add_stand_lib $BOOST_HOME
+add_stand_lib `pwd`/bin/glog/
+
+echo "done"
+

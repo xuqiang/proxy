@@ -1,0 +1,245 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+HTTP_SERVER2_CONNECTION_HPP	connection.hpp	2;"	d
+HTTP_SERVER2_HEADER_HPP	header.hpp	2;"	d
+HTTP_SERVER2_IO_SERVICE_POOL_HPP	io_service_pool.hpp	2;"	d
+HTTP_SERVER2_MIME_TYPES_HPP	mime_types.hpp	2;"	d
+HTTP_SERVER2_REPLY_HPP	reply.hpp	2;"	d
+HTTP_SERVER2_REQUEST_HANDLER_HPP	request_handler.hpp	2;"	d
+HTTP_SERVER2_REQUEST_HPP	request.hpp	2;"	d
+HTTP_SERVER2_REQUEST_PARSER_HPP	request_parser.hpp	2;"	d
+HTTP_SERVER2_SERVER_HPP	server.hpp	2;"	d
+StringSplitter	text.h	/^	StringSplitter( const char * big , const char * splitter )$/;"	f	class:StringSplitter
+StringSplitter	text.h	/^class StringSplitter {$/;"	c
+_BACKEND_SELECTOR_H_	backend_selector.h	5;"	d
+_CONFIG_H_	config.h	5;"	d
+_TEXT_H_	text.h	2;"	d
+_big	text.h	/^	const char * _big;$/;"	m	class:StringSplitter
+_splitter	text.h	/^	const char * _splitter;$/;"	m	class:StringSplitter
+accepted	reply.cpp	/^const char accepted[] =$/;"	m	namespace:http::server2::stock_replies	file:
+accepted	reply.cpp	/^const std::string accepted =$/;"	m	namespace:http::server2::status_strings	file:
+accepted	reply.hpp	/^    accepted = 202,$/;"	e	enum:http::server2::reply::status_type
+acceptor_	server.hpp	/^  boost::asio::ip::tcp::acceptor acceptor_;$/;"	m	class:http::server2::server
+address	config.h	/^	std::string address;$/;"	m	struct:http::server2::backend
+address_	config.h	/^	std::string address_;$/;"	m	class:http::server2::config
+backend	config.h	/^struct backend {$/;"	s	namespace:http::server2
+backend_buffer_	connection.hpp	/^  boost::array<char, 8192> backend_buffer_;$/;"	m	class:http::server2::connection
+backend_selector	backend_selector.h	/^	backend_selector() : init_(false) {};$/;"	f	class:http::server2::backend_selector
+backend_selector	backend_selector.h	/^class backend_selector {$/;"	c	namespace:http::server2
+backend_selector_	connection.hpp	/^  backend_selector* backend_selector_;$/;"	m	class:http::server2::connection
+backend_selector_	server.hpp	/^	backend_selector backend_selector_;$/;"	m	class:http::server2::server
+backend_socket	connection.cpp	/^boost::asio::ip::tcp::socket& connection::backend_socket() {$/;"	f	class:http::server2::connection
+backend_socket_	connection.hpp	/^	boost::asio::ip::tcp::socket backend_socket_;$/;"	m	class:http::server2::connection
+backends_	backend_selector.h	/^	std::vector<backend> backends_;$/;"	m	class:http::server2::backend_selector
+backends_	config.h	/^	std::vector<backend> backends_;$/;"	m	class:http::server2::config
+bad_gateway	reply.cpp	/^const char bad_gateway[] =$/;"	m	namespace:http::server2::stock_replies	file:
+bad_gateway	reply.cpp	/^const std::string bad_gateway =$/;"	m	namespace:http::server2::status_strings	file:
+bad_gateway	reply.hpp	/^    bad_gateway = 502,$/;"	e	enum:http::server2::reply::status_type
+bad_request	reply.cpp	/^const char bad_request[] =$/;"	m	namespace:http::server2::stock_replies	file:
+bad_request	reply.cpp	/^const std::string bad_request =$/;"	m	namespace:http::server2::status_strings	file:
+bad_request	reply.hpp	/^    bad_request = 400,$/;"	e	enum:http::server2::reply::status_type
+buffer_	connection.hpp	/^  boost::array<char, 8192> buffer_;$/;"	m	class:http::server2::connection
+conf_fname_	config.h	/^	std::string conf_fname_;$/;"	m	class:http::server2::config
+config	config.cpp	/^config::config(const std::string& fn) {$/;"	f	class:http::server2::config
+config	config.h	/^class config {$/;"	c	namespace:http::server2
+connection	connection.cpp	/^connection::connection(boost::asio::io_service& io_service,$/;"	f	class:http::server2::connection
+connection	connection.hpp	/^class connection$/;"	c	namespace:http::server2
+connection_ptr	connection.hpp	/^typedef boost::shared_ptr<connection> connection_ptr;$/;"	t	namespace:http::server2
+consume	request_parser.cpp	/^boost::tribool request_parser::consume(request& req, char input)$/;"	f	class:http::server2::request_parser
+content	reply.hpp	/^  std::string content;$/;"	m	struct:http::server2::reply
+created	reply.cpp	/^const char created[] =$/;"	m	namespace:http::server2::stock_replies	file:
+created	reply.cpp	/^const std::string created =$/;"	m	namespace:http::server2::status_strings	file:
+created	reply.hpp	/^    created = 201,$/;"	e	enum:http::server2::reply::status_type
+crlf	reply.cpp	/^const char crlf[] = { '\\r', '\\n' };$/;"	m	namespace:http::server2::misc_strings	file:
+doc_root_	request_handler.hpp	/^  std::string doc_root_;$/;"	m	class:http::server2::request_handler
+expecting_newline_1	request_parser.hpp	/^    expecting_newline_1,$/;"	e	enum:http::server2::request_parser::state
+expecting_newline_2	request_parser.hpp	/^    expecting_newline_2,$/;"	e	enum:http::server2::request_parser::state
+expecting_newline_3	request_parser.hpp	/^    expecting_newline_3$/;"	e	enum:http::server2::request_parser::state
+extension	mime_types.cpp	/^  const char* extension;$/;"	m	struct:http::server2::mime_types::mapping	file:
+extension_to_type	mime_types.cpp	/^std::string extension_to_type(const std::string& extension)$/;"	f	namespace:http::server2::mime_types
+forbidden	reply.cpp	/^const char forbidden[] =$/;"	m	namespace:http::server2::stock_replies	file:
+forbidden	reply.cpp	/^const std::string forbidden =$/;"	m	namespace:http::server2::status_strings	file:
+forbidden	reply.hpp	/^    forbidden = 403,$/;"	e	enum:http::server2::reply::status_type
+get_io_service	io_service_pool.cpp	/^boost::asio::io_service& io_service_pool::get_io_service()$/;"	f	class:http::server2::io_service_pool
+handle_accept	server.cpp	/^void server::handle_accept(const boost::system::error_code& e)$/;"	f	class:http::server2::server
+handle_connect	connection.cpp	/^void connection::handle_connect(const boost::system::error_code& err,$/;"	f	class:http::server2::connection
+handle_read	connection.cpp	/^void connection::handle_read(const boost::system::error_code& e,$/;"	f	class:http::server2::connection
+handle_request	request_handler.cpp	/^void request_handler::handle_request(const request& req, reply& rep)$/;"	f	class:http::server2::request_handler
+handle_resolve	connection.cpp	/^void connection::handle_resolve(const boost::system::error_code& err,$/;"	f	class:http::server2::connection
+handle_server_write_succ	connection.cpp	/^void connection::handle_server_write_succ(const boost::system::error_code& err,$/;"	f	class:http::server2::connection
+handle_stop	server.cpp	/^void server::handle_stop()$/;"	f	class:http::server2::server
+handle_write	connection.cpp	/^void connection::handle_write(const boost::system::error_code& e)$/;"	f	class:http::server2::connection
+hash_str_	backend_selector.h	/^	std::string hash_str_;$/;"	m	class:http::server2::backend_selector
+hash_str_	config.h	/^	std::string hash_str_;$/;"	m	class:http::server2::config
+header	header.hpp	/^struct header$/;"	s	namespace:http::server2
+header_line_start	request_parser.hpp	/^    header_line_start,$/;"	e	enum:http::server2::request_parser::state
+header_lws	request_parser.hpp	/^    header_lws,$/;"	e	enum:http::server2::request_parser::state
+header_name	request_parser.hpp	/^    header_name,$/;"	e	enum:http::server2::request_parser::state
+header_value	request_parser.hpp	/^    header_value,$/;"	e	enum:http::server2::request_parser::state
+headers	reply.hpp	/^  std::vector<header> headers;$/;"	m	struct:http::server2::reply
+headers	request.hpp	/^  std::vector<header> headers;$/;"	m	struct:http::server2::request
+http	backend_selector.cpp	/^namespace http {$/;"	n	file:
+http	backend_selector.h	/^namespace http{$/;"	n
+http	config.cpp	/^namespace http {$/;"	n	file:
+http	config.h	/^namespace http {$/;"	n
+http	connection.cpp	/^namespace http {$/;"	n	file:
+http	connection.hpp	/^namespace http {$/;"	n
+http	header.hpp	/^namespace http {$/;"	n
+http	io_service_pool.cpp	/^namespace http {$/;"	n	file:
+http	io_service_pool.hpp	/^namespace http {$/;"	n
+http	mime_types.cpp	/^namespace http {$/;"	n	file:
+http	mime_types.hpp	/^namespace http {$/;"	n
+http	reply.cpp	/^namespace http {$/;"	n	file:
+http	reply.hpp	/^namespace http {$/;"	n
+http	request.hpp	/^namespace http {$/;"	n
+http	request_handler.cpp	/^namespace http {$/;"	n	file:
+http	request_handler.hpp	/^namespace http {$/;"	n
+http	request_parser.cpp	/^namespace http {$/;"	n	file:
+http	request_parser.hpp	/^namespace http {$/;"	n
+http	server.cpp	/^namespace http {$/;"	n	file:
+http	server.hpp	/^namespace http {$/;"	n
+http_version_h	request_parser.hpp	/^    http_version_h,$/;"	e	enum:http::server2::request_parser::state
+http_version_major	request.hpp	/^  int http_version_major;$/;"	m	struct:http::server2::request
+http_version_major	request_parser.hpp	/^    http_version_major,$/;"	e	enum:http::server2::request_parser::state
+http_version_major_start	request_parser.hpp	/^    http_version_major_start,$/;"	e	enum:http::server2::request_parser::state
+http_version_minor	request.hpp	/^  int http_version_minor;$/;"	m	struct:http::server2::request
+http_version_minor	request_parser.hpp	/^    http_version_minor,$/;"	e	enum:http::server2::request_parser::state
+http_version_minor_start	request_parser.hpp	/^    http_version_minor_start,$/;"	e	enum:http::server2::request_parser::state
+http_version_p	request_parser.hpp	/^    http_version_p,$/;"	e	enum:http::server2::request_parser::state
+http_version_slash	request_parser.hpp	/^    http_version_slash,$/;"	e	enum:http::server2::request_parser::state
+http_version_t_1	request_parser.hpp	/^    http_version_t_1,$/;"	e	enum:http::server2::request_parser::state
+http_version_t_2	request_parser.hpp	/^    http_version_t_2,$/;"	e	enum:http::server2::request_parser::state
+init	backend_selector.cpp	/^void backend_selector::init(const config& c) {$/;"	f	class:http::server2::backend_selector
+init_	backend_selector.h	/^	bool init_;$/;"	m	class:http::server2::backend_selector
+internal_server_error	reply.cpp	/^const char internal_server_error[] =$/;"	m	namespace:http::server2::stock_replies	file:
+internal_server_error	reply.cpp	/^const std::string internal_server_error =$/;"	m	namespace:http::server2::status_strings	file:
+internal_server_error	reply.hpp	/^    internal_server_error = 500,$/;"	e	enum:http::server2::reply::status_type
+io_service_pool	io_service_pool.cpp	/^io_service_pool::io_service_pool(std::size_t pool_size)$/;"	f	class:http::server2::io_service_pool
+io_service_pool	io_service_pool.hpp	/^class io_service_pool$/;"	c	namespace:http::server2
+io_service_pool_	server.hpp	/^  io_service_pool io_service_pool_;$/;"	m	class:http::server2::server
+io_service_ptr	io_service_pool.hpp	/^  typedef boost::shared_ptr<boost::asio::io_service> io_service_ptr;$/;"	t	class:http::server2::io_service_pool
+io_services_	io_service_pool.hpp	/^  std::vector<io_service_ptr> io_services_;$/;"	m	class:http::server2::io_service_pool
+is_char	request_parser.cpp	/^bool request_parser::is_char(int c)$/;"	f	class:http::server2::request_parser
+is_ctl	request_parser.cpp	/^bool request_parser::is_ctl(int c)$/;"	f	class:http::server2::request_parser
+is_digit	request_parser.cpp	/^bool request_parser::is_digit(int c)$/;"	f	class:http::server2::request_parser
+is_tspecial	request_parser.cpp	/^bool request_parser::is_tspecial(int c)$/;"	f	class:http::server2::request_parser
+join	text.cpp	/^string StringSplitter::join( vector<string>& l , const string& split ) {$/;"	f	class:StringSplitter
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f
+mapping	mime_types.cpp	/^struct mapping$/;"	s	namespace:http::server2::mime_types	file:
+mappings	mime_types.cpp	/^} mappings[] =$/;"	m	namespace:http::server2::mime_types	typeref:struct:http::server2::mime_types::mapping	file:
+method	request.hpp	/^  std::string method;$/;"	m	struct:http::server2::request
+method	request_parser.hpp	/^    method,$/;"	e	enum:http::server2::request_parser::state
+method_start	request_parser.hpp	/^    method_start,$/;"	e	enum:http::server2::request_parser::state
+mime_type	mime_types.cpp	/^  const char* mime_type;$/;"	m	struct:http::server2::mime_types::mapping	file:
+mime_types	mime_types.cpp	/^namespace mime_types {$/;"	n	namespace:http::server2	file:
+mime_types	mime_types.hpp	/^namespace mime_types {$/;"	n	namespace:http::server2
+misc_strings	reply.cpp	/^namespace misc_strings {$/;"	n	namespace:http::server2	file:
+more	text.h	/^	bool more() const { return _big[0] != 0; }$/;"	f	class:StringSplitter
+moved_permanently	reply.cpp	/^const char moved_permanently[] =$/;"	m	namespace:http::server2::stock_replies	file:
+moved_permanently	reply.cpp	/^const std::string moved_permanently =$/;"	m	namespace:http::server2::status_strings	file:
+moved_permanently	reply.hpp	/^    moved_permanently = 301,$/;"	e	enum:http::server2::reply::status_type
+moved_temporarily	reply.cpp	/^const char moved_temporarily[] =$/;"	m	namespace:http::server2::stock_replies	file:
+moved_temporarily	reply.cpp	/^const std::string moved_temporarily =$/;"	m	namespace:http::server2::status_strings	file:
+moved_temporarily	reply.hpp	/^    moved_temporarily = 302,$/;"	e	enum:http::server2::reply::status_type
+multiple_choices	reply.cpp	/^const char multiple_choices[] =$/;"	m	namespace:http::server2::stock_replies	file:
+multiple_choices	reply.cpp	/^const std::string multiple_choices =$/;"	m	namespace:http::server2::status_strings	file:
+multiple_choices	reply.hpp	/^    multiple_choices = 300,$/;"	e	enum:http::server2::reply::status_type
+name	header.hpp	/^  std::string name;$/;"	m	struct:http::server2::header
+name_value_separator	reply.cpp	/^const char name_value_separator[] = { ':', ' ' };$/;"	m	namespace:http::server2::misc_strings	file:
+new_connection_	server.hpp	/^  connection_ptr new_connection_;$/;"	m	class:http::server2::server
+next	text.cpp	/^string StringSplitter::next() {$/;"	f	class:StringSplitter
+next_io_service_	io_service_pool.hpp	/^  std::size_t next_io_service_;$/;"	m	class:http::server2::io_service_pool
+no_content	reply.cpp	/^const char no_content[] =$/;"	m	namespace:http::server2::stock_replies	file:
+no_content	reply.cpp	/^const std::string no_content =$/;"	m	namespace:http::server2::status_strings	file:
+no_content	reply.hpp	/^    no_content = 204,$/;"	e	enum:http::server2::reply::status_type
+not_found	reply.cpp	/^const char not_found[] =$/;"	m	namespace:http::server2::stock_replies	file:
+not_found	reply.cpp	/^const std::string not_found =$/;"	m	namespace:http::server2::status_strings	file:
+not_found	reply.hpp	/^    not_found = 404,$/;"	e	enum:http::server2::reply::status_type
+not_implemented	reply.cpp	/^const char not_implemented[] =$/;"	m	namespace:http::server2::stock_replies	file:
+not_implemented	reply.cpp	/^const std::string not_implemented =$/;"	m	namespace:http::server2::status_strings	file:
+not_implemented	reply.hpp	/^    not_implemented = 501,$/;"	e	enum:http::server2::reply::status_type
+not_modified	reply.cpp	/^const char not_modified[] =$/;"	m	namespace:http::server2::stock_replies	file:
+not_modified	reply.cpp	/^const std::string not_modified =$/;"	m	namespace:http::server2::status_strings	file:
+not_modified	reply.hpp	/^    not_modified = 304,$/;"	e	enum:http::server2::reply::status_type
+ok	reply.cpp	/^const char ok[] = "";$/;"	m	namespace:http::server2::stock_replies	file:
+ok	reply.cpp	/^const std::string ok =$/;"	m	namespace:http::server2::status_strings	file:
+ok	reply.hpp	/^    ok = 200,$/;"	e	enum:http::server2::reply::status_type
+parse	config.cpp	/^int config::parse() {$/;"	f	class:http::server2::config
+parse	request_parser.hpp	/^  boost::tuple<boost::tribool, InputIterator> parse(request& req,$/;"	f	class:http::server2::request_parser
+pick	backend_selector.cpp	/^int backend_selector::pick(const request& r, backend& b) {$/;"	f	class:http::server2::backend_selector
+port	config.h	/^	int port;$/;"	m	struct:http::server2::backend
+port_	config.h	/^	std::string port_;$/;"	m	class:http::server2::config
+query_str	config.h	/^	std::string query_str;$/;"	m	struct:http::server2::backend
+reply	reply.hpp	/^struct reply$/;"	s	namespace:http::server2
+reply_	connection.hpp	/^  reply reply_;$/;"	m	class:http::server2::connection
+request	request.hpp	/^struct request$/;"	s	namespace:http::server2
+request_	connection.hpp	/^  request request_;$/;"	m	class:http::server2::connection
+request_handler	request_handler.cpp	/^request_handler::request_handler(const std::string& doc_root)$/;"	f	class:http::server2::request_handler
+request_handler	request_handler.hpp	/^class request_handler$/;"	c	namespace:http::server2
+request_parser	request_parser.cpp	/^request_parser::request_parser()$/;"	f	class:http::server2::request_parser
+request_parser	request_parser.hpp	/^class request_parser$/;"	c	namespace:http::server2
+request_parser_	connection.hpp	/^  request_parser request_parser_;$/;"	m	class:http::server2::connection
+reset	request_parser.cpp	/^void request_parser::reset()$/;"	f	class:http::server2::request_parser
+resolver_	connection.hpp	/^  boost::asio::ip::tcp::resolver resolver_;$/;"	m	class:http::server2::connection
+run	io_service_pool.cpp	/^void io_service_pool::run()$/;"	f	class:http::server2::io_service_pool
+run	server.cpp	/^void server::run()$/;"	f	class:http::server2::server
+server	server.cpp	/^server::server(const http::server2::config& c)$/;"	f	class:http::server2::server
+server	server.hpp	/^class server$/;"	c	namespace:http::server2
+server2	backend_selector.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	backend_selector.h	/^namespace server2 {$/;"	n	namespace:http
+server2	config.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	config.h	/^namespace server2 {$/;"	n	namespace:http
+server2	connection.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	connection.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	header.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	io_service_pool.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	io_service_pool.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	mime_types.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	mime_types.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	reply.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	reply.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	request.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	request_handler.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	request_handler.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	request_parser.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	request_parser.hpp	/^namespace server2 {$/;"	n	namespace:http
+server2	server.cpp	/^namespace server2 {$/;"	n	namespace:http	file:
+server2	server.hpp	/^namespace server2 {$/;"	n	namespace:http
+service_unavailable	reply.cpp	/^const char service_unavailable[] =$/;"	m	namespace:http::server2::stock_replies	file:
+service_unavailable	reply.cpp	/^const std::string service_unavailable =$/;"	m	namespace:http::server2::status_strings	file:
+service_unavailable	reply.hpp	/^    service_unavailable = 503$/;"	e	enum:http::server2::reply::status_type
+signals_	server.hpp	/^  boost::asio::signal_set signals_;$/;"	m	class:http::server2::server
+socket	connection.cpp	/^boost::asio::ip::tcp::socket& connection::socket()$/;"	f	class:http::server2::connection
+socket_	connection.hpp	/^  boost::asio::ip::tcp::socket socket_;$/;"	m	class:http::server2::connection
+space_before_header_value	request_parser.hpp	/^    space_before_header_value,$/;"	e	enum:http::server2::request_parser::state
+split	text.cpp	/^vector<string> StringSplitter::split( const string& big , const string& splitter ) {$/;"	f	class:StringSplitter
+split	text.cpp	/^vector<string> StringSplitter::split() {$/;"	f	class:StringSplitter
+split	text.cpp	/^void StringSplitter::split( vector<string>& l ) {$/;"	f	class:StringSplitter
+start	connection.cpp	/^void connection::start()$/;"	f	class:http::server2::connection
+start_accept	server.cpp	/^void server::start_accept()$/;"	f	class:http::server2::server
+start_write_to_backend	connection.cpp	/^void connection::start_write_to_backend() {$/;"	f	class:http::server2::connection
+state	request_parser.hpp	/^  enum state$/;"	g	class:http::server2::request_parser
+state_	request_parser.hpp	/^  } state_;$/;"	m	class:http::server2::request_parser	typeref:enum:http::server2::request_parser::state
+status	reply.hpp	/^  } status;$/;"	m	struct:http::server2::reply	typeref:enum:http::server2::reply::status_type
+status_strings	reply.cpp	/^namespace status_strings {$/;"	n	namespace:http::server2	file:
+status_type	reply.hpp	/^  enum status_type$/;"	g	struct:http::server2::reply
+stock_replies	reply.cpp	/^namespace stock_replies {$/;"	n	namespace:http::server2	file:
+stock_reply	reply.cpp	/^reply reply::stock_reply(reply::status_type status)$/;"	f	class:http::server2::reply
+stop	io_service_pool.cpp	/^void io_service_pool::stop()$/;"	f	class:http::server2::io_service_pool
+thread_num_	config.h	/^	int thread_num_;$/;"	m	class:http::server2::config
+to_buffer	reply.cpp	/^boost::asio::const_buffer to_buffer(reply::status_type status)$/;"	f	namespace:http::server2::status_strings
+to_buffers	reply.cpp	/^std::vector<boost::asio::const_buffer> reply::to_buffers()$/;"	f	class:http::server2::reply
+to_string	reply.cpp	/^std::string to_string(reply::status_type status)$/;"	f	namespace:http::server2::stock_replies
+unauthorized	reply.cpp	/^const char unauthorized[] =$/;"	m	namespace:http::server2::stock_replies	file:
+unauthorized	reply.cpp	/^const std::string unauthorized =$/;"	m	namespace:http::server2::status_strings	file:
+unauthorized	reply.hpp	/^    unauthorized = 401,$/;"	e	enum:http::server2::reply::status_type
+uri	request.hpp	/^  std::string uri;$/;"	m	struct:http::server2::request
+uri	request_parser.hpp	/^    uri,$/;"	e	enum:http::server2::request_parser::state
+url_decode	request_handler.cpp	/^bool request_handler::url_decode(const std::string& in, std::string& out)$/;"	f	class:http::server2::request_handler
+value	header.hpp	/^  std::string value;$/;"	m	struct:http::server2::header
+work_	io_service_pool.hpp	/^  std::vector<work_ptr> work_;$/;"	m	class:http::server2::io_service_pool
+work_ptr	io_service_pool.hpp	/^  typedef boost::shared_ptr<boost::asio::io_service::work> work_ptr;$/;"	t	class:http::server2::io_service_pool
